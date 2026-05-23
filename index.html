@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of G. K. K. Prasad Velamuri - Full-Stack Software Engineer, AI/ML & Data Engineering Specialist. Explore projects like AutoWealth AI governance, ML models, and interactive web tools.">
+    <title>G. K. K. Prasad Velamuri | Full-Stack & AI/ML Software Engineer</title>
+    <!-- Google Fonts: Outfit (Headings) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient Background Lighting -->
+    <div class="ambient-glow" id="ambient-glow"></div>
+    <div class="interactive-grid"></div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header glass">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span> Prasad <span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link active" id="nav-link-about">About</a></li>
+                    <li><a href="#experience" class="nav-link" id="nav-link-experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+                    <li><a href="#education" class="nav-link" id="nav-link-education">Education</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://docs.google.com/document/d/1ubPfAZapltlpQQPUxLmFaaovFC5Kwi5K6_mrY_hykm0/edit?usp=sharing" target="_blank" class="btn btn-primary btn-sm resume-btn" id="download-resume-btn-nav">
+                    <i class="fa-solid fa-download"></i> Resume
+                </a>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <main class="portfolio-container">
+        
+        <!-- Hero / About Section -->
+        <section id="about" class="hero-section scroll-reveal">
+            <div class="grid-container">
+                <div class="hero-content">
+                    <div class="badge-wrapper">
+                        <span class="glow-badge"><i class="fa-solid fa-bolt"></i> Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Prasad Velamuri</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span class="typewriter" id="typewriter-text" data-words='["Full-Stack Engineer", "AI/ML Developer", "Data Pipeline Builder"]'></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Full-stack and backend-focused Software Engineer with experience building scalable web applications, REST APIs, and data-driven systems. Skilled in Python, Flask, SQL, and system design, with hands-on experience integrating machine learning models into production-ready applications.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+                            Get in Touch <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary" id="hero-projects-btn">
+                            View My Work
+                        </a>
+                        <button class="btn btn-outline" id="hero-resume-btn" onclick="window.print()">
+                            <i class="fa-solid fa-print"></i> Print CV
+                        </button>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/prasadvelamuri" target="_blank" aria-label="GitHub" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/prasad-velamuri" target="_blank" aria-label="LinkedIn" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:studentprasad796@gmail.com" aria-label="Email" class="social-icon-btn"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+917815908644" aria-label="Phone" class="social-icon-btn"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-wrapper">
+                        <!-- Abstract Glowing Shapes with 3D Depth Effect -->
+                        <div class="glowing-orb orb-primary"></div>
+                        <div class="glowing-orb orb-secondary"></div>
+                        <div class="visual-card glass" id="hero-interactive-card">
+                            <div class="card-header">
+                                <div class="terminal-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="terminal-title">prasad.py</span>
+                            </div>
+                            <div class="card-body">
+                                <pre><code><span class="keyword">class</span> <span class="class-name">SoftwareEngineer</span>:
+    <span class="keyword">def</span> <span class="method">__init__</span>(self):
+        self.name = <span class="string">"G.K.K. Prasad Velamuri"</span>
+        self.location = <span class="string">"Hyderabad, India"</span>
+        self.focus = [<span class="string">"Backend"</span>, <span class="string">"AI/ML"</span>, <span class="string">"Data"</span>]
+        
+    <span class="keyword">def</span> <span class="method">get_skills</span>(self):
+        <span class="keyword">return</span> {
+            <span class="string">"languages"</span>: [<span class="string">"Python"</span>, <span class="string">"SQL"</span>, <span class="string">"Java"</span>, <span class="string">"C++"</span>],
+            <span class="string">"frameworks"</span>: [<span class="string">"Flask"</span>, <span class="string">"FastAPI"</span>, <span class="string">"ML models"</span>],
+            <span class="string">"databases"</span>: [<span class="string">"PostgreSQL"</span>, <span class="string">"MySQL"</span>, <span class="string">"SQLite"</span>]
+        }
+    
+    <span class="keyword">def</span> <span class="method">is_passionate</span>(self):
+        <span class="keyword">return</span> <span class="constant">True</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Career Journey</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1: Prodigal AI -->
+                <div class="timeline-item scroll-reveal" id="exp-prodigal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass tilt-target">
+                        <div class="timeline-header">
+                            <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> Mar 2025 – Nov 2025</span>
+                            <h3 class="role-title">Data Engineer / SDE Intern</h3>
+                            <h4 class="company-name"><a href="#" class="company-link">Prodigal AI Technologies Pvt Ltd</a> <span class="location-badge">Delhi, India</span></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-intro">Worked on end-to-end data pipelines, handling ingestion, cleaning, transformation, and storage of structured data to power AI inference systems.</p>
+                            <ul class="timeline-bullets">
+                                <li>Built data ingestion and transformation pipelines supporting robust backend services and ML inference workflows.</li>
+                                <li>Developed Python scripts for automated data cleaning and normalization, increasing downstream pipeline reliability by <strong>~30–40%</strong>.</li>
+                                <li>Integrated SQL and vector databases to store embeddings, user interaction history, and system logs for low-latency retrieval and context injection.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Data Pipelines</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Vector DBs</span>
+                                <span class="tag">ETL</span>
+                                <span class="tag">SQL Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2: Placify -->
+                <div class="timeline-item scroll-reveal" id="exp-placify">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass tilt-target">
+                        <div class="timeline-header">
+                            <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> Mar 2024 - May 2024</span>
+                            <h3 class="role-title">AI & ML Intern</h3>
+                            <h4 class="company-name"><a href="#" class="company-link">Placify Technologies Pvt Ltd</a> <span class="location-badge">Hyderabad, India</span></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-intro">Focused on applied machine learning, handling exploratory analysis, feature extraction, and pipeline training workflows.</p>
+                            <ul class="timeline-bullets">
+                                <li>Worked on applied machine learning tasks, including comprehensive data preprocessing, feature engineering, and model experimentation for real-world datasets.</li>
+                                <li>Assisted in training and evaluating ML models, analyzing performance with precision, recall, accuracy, and F1-score classification metrics.</li>
+                                <li>Contributed to integrating ML outputs into backend endpoints for active deployment and production testing scenarios.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Feature Engineering</span>
+                                <span class="tag">Data Preprocessing</span>
+                                <span class="tag">Model Evaluation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3: Suvidha Foundations -->
+                <div class="timeline-item scroll-reveal" id="exp-suvidha">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass tilt-target">
+                        <div class="timeline-header">
+                            <span class="timeline-duration"><i class="fa-regular fa-calendar"></i> Apr 2025 - Apr 2025</span>
+                            <h3 class="role-title">Web Development Intern</h3>
+                            <h4 class="company-name"><a href="#" class="company-link">Suvidha Foundations Pvt Ltd</a> <span class="location-badge">Hyderabad, India</span></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="timeline-intro">Developed robust backend components and maintained reliable API operations.</p>
+                            <ul class="timeline-bullets">
+                                <li>Developed and maintained backend-integrated web features with a strict focus on secure data handling, inputs validation, and seamless API interaction.</li>
+                                <li>Assisted in debugging, optimizing, and improving application workflows to enhance API stability and end-user page responsiveness.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span class="tag">Web Development</span>
+                                <span class="tag">API Interaction</span>
+                                <span class="tag">Data Validation</span>
+                                <span class="tag">Debugging</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">My Creations</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Custom Category Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Projects</button>
+                <button class="filter-tab" data-filter="ai-ml">AI & ML</button>
+                <button class="filter-tab" data-filter="full-stack">Full-Stack / Systems</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: AutoWealth -->
+                <div class="project-card glass tilt-target scroll-reveal" data-category="ai-ml" id="proj-autowealth">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-scale-balanced project-icon-main"></i>
+                        <div class="glow-spot"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-cat"><i class="fa-solid fa-microchip"></i> AI Financial Tech</span>
+                            <span class="project-badge highlighted">SAP Finalist</span>
+                        </div>
+                        <h3 class="project-title">AutoWealth – AI Financial Governance</h3>
+                        <p class="project-desc">
+                            An AI-driven platform that autonomously monitors startup financial health and enforces policy-based spending optimization using advanced LLM reasoning.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Designed a three-tier governance model (Stable, Watch, Critical) that dynamically adjusts AI authority based on financial runway levels.</li>
+                            <li>Implemented AI analysis to identify inefficient SaaS subscriptions and optimize capital runway sustainability.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="proj-tag">Python</span>
+                            <span class="proj-tag">Flask</span>
+                            <span class="proj-tag">Ollama LLM</span>
+                            <span class="proj-tag">SQLite</span>
+                            <span class="proj-tag">Async Tasks</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-secondary" onclick="alert('Demo running locally inside protected sandbox environment.')"><i class="fa-solid fa-rocket"></i> Live Demo</a>
+                            <a href="https://github.com/prasadvelamuri" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Personalized Study Assistant -->
+                <div class="project-card glass tilt-target scroll-reveal" data-category="ai-ml" id="proj-study-assistant">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-graduation-cap project-icon-main"></i>
+                        <div class="glow-spot"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-cat"><i class="fa-solid fa-brain"></i> EdTech & NLP</span>
+                        </div>
+                        <h3 class="project-title">AI Personalized Study Assistant</h3>
+                        <p class="project-desc">
+                            Adaptive learning platform that generates tailored study plans by leveraging NLP-based syllabus parsing and transformer models.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Integrated Hugging Face transformers for topic understanding, instant summarizations, and beginner-friendly doubt resolution.</li>
+                            <li>Developed reliable REST APIs with Flask/FastAPI and SQLite for syllabus upload, dynamic plan generation, and persistence.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="proj-tag">Hugging Face</span>
+                            <span class="proj-tag">NLP</span>
+                            <span class="proj-tag">FastAPI</span>
+                            <span class="proj-tag">Transformers</span>
+                            <span class="proj-tag">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-secondary" onclick="alert('Study Assistant backend serving active instances.')"><i class="fa-solid fa-rocket"></i> Live Demo</a>
+                            <a href="https://github.com/prasadvelamuri" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Multimodal Disaster Identification -->
+                <div class="project-card glass tilt-target scroll-reveal" data-category="ai-ml" id="proj-disaster-id">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-triangle-exclamation project-icon-main"></i>
+                        <div class="glow-spot"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-cat"><i class="fa-solid fa-network-wired"></i> Deep Learning</span>
+                        </div>
+                        <h3 class="project-title">Multimodal Disaster Identification</h3>
+                        <p class="project-desc">
+                            Deep learning system that detects and maps active disaster events by fusing textual metadata and context features from social media posts.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Implemented a deep attentive multimodal model to identify disaster events in social media feeds.</li>
+                            <li>Combined text features and social metadata with self-attention layers to improve classification accuracy over single-modality baselines.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="proj-tag">Deep Learning</span>
+                            <span class="proj-tag">Multimodal</span>
+                            <span class="proj-tag">Attention Mechanisms</span>
+                            <span class="proj-tag">Social Media Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-sm btn-secondary" onclick="alert('Model weights stored in S3 bucket. System details in documentation.')"><i class="fa-solid fa-chart-line"></i> Metrics</a>
+                            <a href="https://github.com/prasadvelamuri" target="_blank" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Flight Delay Prediction -->
+                <div class="project-card glass tilt-target scroll-reveal" data-category="ai-ml" id="proj-flight-delay">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-plane-departure project-icon-main"></i>
+                        <div class="glow-spot"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-cat"><i class="fa-solid fa-clock"></i> Predictive Analytics</span>
+                            <span class="project-badge github-badge"><i class="fa-brands fa-github"></i> Repo</span>
+                        </div>
+                        <h3 class="project-title">Flight Delay Prediction System</h3>
+                        <p class="project-desc">
+                            Predictive analytics pipeline that aggregates historical commercial airline data, models weather patterns, and projects departure/arrival delays.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Analyzed large datasets utilizing pandas, numpy, and Scikit-learn algorithms.</li>
+                            <li>Optimized model deployment for low-latency scoring and API integration.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="proj-tag">Machine Learning</span>
+                            <span class="proj-tag">Pandas / Numpy</span>
+                            <span class="proj-tag">Scikit-learn</span>
+                            <span class="proj-tag">Data Engineering</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prasadvelamuri/Flight-Delay-Prediction" target="_blank" class="btn btn-sm btn-primary"><i class="fa-brands fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Team Task Manager -->
+                <div class="project-card glass tilt-target scroll-reveal" data-category="full-stack" id="proj-task-manager">
+                    <div class="project-image-fallback">
+                        <i class="fa-solid fa-list-check project-icon-main"></i>
+                        <div class="glow-spot"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-cat"><i class="fa-solid fa-users-gear"></i> Systems & Management</span>
+                            <span class="project-badge github-badge"><i class="fa-brands fa-github"></i> Repo</span>
+                        </div>
+                        <h3 class="project-title">Team Task Manager</h3>
+                        <p class="project-desc">
+                            A highly optimized and collaborative team task management platform constructed with modular backend architectures and real-time operational flows.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Developed reliable database relations and transaction protocols to secure task history and assignments.</li>
+                            <li>Engineered highly responsive client interaction schemas with RESTful endpoints.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="proj-tag">Python</span>
+                            <span class="proj-tag">REST APIs</span>
+                            <span class="proj-tag">Relational Database</span>
+                            <span class="proj-tag">Team Collaboration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prasadvelamuri/team-task-manager" target="_blank" class="btn btn-sm btn-primary"><i class="fa-brands fa-github"></i> View Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Proficiencies</span>
+                <h2 class="section-title">My Technical <span class="gradient-text">Skills</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Category 1: Languages -->
+                <div class="skills-card glass tilt-target scroll-reveal" id="skill-languages">
+                    <div class="skills-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span><span class="skill-percentage">95%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL (MySQL/PostgreSQL)</span><span class="skill-percentage">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Java</span><span class="skill-percentage">80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>C++</span><span class="skill-percentage">75%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Backend & Systems -->
+                <div class="skills-card glass tilt-target scroll-reveal" id="skill-backend">
+                    <div class="skills-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Backend & Systems</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Flask / FastAPI</span><span class="skill-percentage">92%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>REST APIs & Integrations</span><span class="skill-percentage">95%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Model Serving & Deployment</span><span class="skill-percentage">85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Async Task Processing</span><span class="skill-percentage">88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: AI & Machine Learning -->
+                <div class="skills-card glass tilt-target scroll-reveal" id="skill-ai-ml">
+                    <div class="skills-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Machine Learning & Analytics</span><span class="skill-percentage">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>NLP & Transformer Models</span><span class="skill-percentage">85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>LLM Integration & Prompt Eng.</span><span class="skill-percentage">88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Multimodal Learning Systems</span><span class="skill-percentage">80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4: Data Engineering -->
+                <div class="skills-card glass tilt-target scroll-reveal" id="skill-data">
+                    <div class="skills-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Ingestion & ETL Pipelines</span><span class="skill-percentage">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Cleaning & Normalization</span><span class="skill-percentage">92%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Relational Database Design</span><span class="skill-percentage">88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL & Query Optimization</span><span class="skill-percentage">85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 5: Tools & Platforms -->
+                <div class="skills-card glass tilt-target scroll-reveal" id="skill-tools" style="grid-column: span 2;">
+                    <div class="skills-card-header">
+                        <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+                        <h3>Tools, Platforms & Professional Soft Skills</h3>
+                    </div>
+                    <div class="tools-grid-layout">
+                        <div class="tools-category">
+                            <h4>DevOps & Tools</h4>
+                            <div class="pill-cloud">
+                                <span class="skill-pill"><i class="fa-brands fa-aws"></i> AWS (EC2, S3)</span>
+                                <span class="skill-pill"><i class="fa-brands fa-docker"></i> Docker</span>
+                                <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git/GitHub</span>
+                                <span class="skill-pill"><i class="fa-solid fa-server"></i> SQLite</span>
+                                <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> Railway</span>
+                                <span class="skill-pill"><i class="fa-solid fa-terminal"></i> Postman</span>
+                            </div>
+                        </div>
+                        <div class="tools-category">
+                            <h4>Professional Skills</h4>
+                            <div class="pill-cloud">
+                                <span class="skill-pill professional"><i class="fa-solid fa-magnifying-glass-chart"></i> Analytical Thinking</span>
+                                <span class="skill-pill professional"><i class="fa-solid fa-users"></i> Team Collaboration</span>
+                                <span class="skill-pill professional"><i class="fa-solid fa-comments"></i> Clear Communication</span>
+                                <span class="skill-pill professional"><i class="fa-solid fa-lightbulb"></i> Rapid Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Achievements Section -->
+        <section id="education" class="education-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Background</span>
+                <h2 class="section-title">Education & <span class="gradient-text">Leadership</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="education-grid">
+                <!-- Education Card -->
+                <div class="edu-card glass tilt-target scroll-reveal" id="edu-card-btech">
+                    <div class="edu-icon-shield"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="edu-details">
+                        <span class="edu-duration"><i class="fa-regular fa-calendar"></i> Sep 2023 – Apr 2026</span>
+                        <h3>Bachelor of Technology (B.Tech)</h3>
+                        <h4>Computer Science - Specialization in AI / ML</h4>
+                        <h5>Visvesvaraya College of Engineering & Technology, Hyderabad</h5>
+                        <div class="edu-gpa">
+                            <span class="gpa-label">CGPA</span>
+                            <span class="gpa-value">8.52 / 10.0</span>
+                        </div>
+                        <div class="coursework">
+                            <h6>Key Coursework:</h6>
+                            <p>Data Structures & Algorithms, Operating Systems, Computer Networks, Machine Learning Models, SQL, Database Management Systems</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements & Leadership Card -->
+                <div class="achievements-card glass tilt-target scroll-reveal" id="achievements-card-leader">
+                    <div class="achievements-header">
+                        <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h3>Achievements & Leadership</h3>
+                    </div>
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <div class="ach-bullet-icon"><i class="fa-solid fa-award"></i></div>
+                            <div class="ach-content">
+                                <h4>Finalist – Codeunnati Marathon</h4>
+                                <p>Led our project <strong>AutoWealth AI</strong> to become a finalist in the Codeunnati Marathon, conducted by SAP and TASK, out of 600 competing teams nationwide.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="ach-bullet-icon"><i class="fa-solid fa-people-group"></i></div>
+                            <div class="ach-content">
+                                <h4>Team Lead – Academic Project Work</h4>
+                                <p>Led a four-member development team, coordinating sprint tasks, reviewing code commits, and ensuring full compliance with high backend development and REST API standards.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="ach-bullet-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                            <div class="ach-content">
+                                <h4>Organizer – College Technical Fest</h4>
+                                <p>Organized college-level gatherings, managed schedules, and structured successful hackathons, programming sprints, and techno-quizzes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-header">
+                <span class="section-subtitle">Reach Out</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info-column">
+                    <h3>Let's collaborate on your next project</h3>
+                    <p>I am interested in full-time Software Engineering roles, SDE opportunities, or collaborations on AI/ML applications and advanced backend systems. Feel free to contact me directly!</p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="detail-text">
+                                <span>Email Me</span>
+                                <a href="mailto:studentprasad796@gmail.com" id="contact-link-email">studentprasad796@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="detail-text">
+                                <span>Call Me</span>
+                                <a href="tel:+917815908644" id="contact-link-phone">+91 78159 08644</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="detail-text">
+                                <span>Location</span>
+                                <p>Hyderabad, Telangana, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-circles">
+                        <a href="https://github.com/prasadvelamuri" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/prasad-velamuri" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-column glass">
+                    <form id="contact-form" onsubmit="event.preventDefault(); submitContactForm();">
+                        <div class="form-group">
+                            <input type="text" id="form-name" required placeholder=" ">
+                            <label for="form-name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" required placeholder=" ">
+                            <label for="form-email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="form-subject" required placeholder=" ">
+                            <label for="form-subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" required rows="5" placeholder=" "></textarea>
+                            <label for="form-message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Submission Confirmation Overlay -->
+                    <div class="form-success-overlay" id="form-success-overlay">
+                        <div class="success-content">
+                            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <h3>Message Sent!</h3>
+                            <p>Thank you, Prasad will get back to you as soon as possible.</p>
+                            <button class="btn btn-secondary btn-sm" onclick="resetContactForm()">Send Another</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 G. K. K. Prasad Velamuri. All rights reserved.</p>
+            <p class="footer-subtext">Designed with premium glassmorphism aesthetics and custom-built fluid dynamics.</p>
+        </div>
+    </footer>
+
+    <!-- Print Optimized Resume Section (Invisible on screen, styled completely for clean A4 printing) -->
+    <div id="print-resume" class="print-only">
+        <div class="print-resume-header">
+            <h1>G. K. K. Prasad Velamuri</h1>
+            <div class="print-resume-contact">
+                <span>📞 +91 7815908644</span> | 
+                <span>✉ studentprasad796@gmail.com</span> | 
+                <span>🔗 linkedin.com/in/prasad-velamuri</span> | 
+                <span>📍 Hyderabad, India</span>
+            </div>
+        </div>
+
+        <div class="print-resume-section">
+            <h2>Professional Summary</h2>
+            <div class="print-divider"></div>
+            <p>Full-stack and backend-focused Software Engineer with experience building scalable web applications, REST APIs, and data-driven systems. Skilled in Flask, SQL, and system design, with hands-on experience integrating machine learning into production-ready applications.</p>
+        </div>
+
+        <div class="print-resume-section">
+            <h2>Experience</h2>
+            <div class="print-divider"></div>
+            
+            <div class="print-job">
+                <div class="print-job-header">
+                    <strong>Data Engineer/SDE Intern</strong>
+                    <span>Mar 2025 – Nov 2025</span>
+                </div>
+                <div class="print-job-company">Prodigal AI Technologies Pvt Ltd, Delhi</div>
+                <ul>
+                    <li>Worked on end-to-end data pipelines, handling ingestion, cleaning, transformation, and storage of structured.</li>
+                    <li>Built data ingestion and transformation pipelines supporting backend services and ML inference workflows.</li>
+                    <li>Developed Python scripts for data cleaning and normalization, improving downstream pipeline reliability by ~30–40%.</li>
+                    <li>Integrated SQL and vector databases to store embeddings, user interaction history, and system logs for low-latency retrieval.</li>
+                </ul>
+            </div>
+
+            <div class="print-job">
+                <div class="print-job-header">
+                    <strong>AI & ML Intern</strong>
+                    <span>Mar 2024 – May 2024</span>
+                </div>
+                <div class="print-job-company">Placify Technologies Pvt Ltd, Hyderabad</div>
+                <ul>
+                    <li>Worked on applied machine learning tasks, including data preprocessing, feature engineering, and model experimentation for real-world datasets.</li>
+                    <li>Assisted in training and evaluating ML models, analyzing performance using accuracy and classification metrics.</li>
+                    <li>Contributed to integrating ML outputs into backend workflows for practical deployment scenarios.</li>
+                </ul>
+            </div>
+
+            <div class="print-job">
+                <div class="print-job-header">
+                    <strong>Web Development Intern</strong>
+                    <span>Apr 2025 – Apr 2025</span>
+                </div>
+                <div class="print-job-company">Suvidha Foundations Pvt Ltd, Hyderabad</div>
+                <ul>
+                    <li>Developed and maintained backend-integrated web features with a focus on data handling, validation, and API interaction.</li>
+                    <li>Assisted in debugging and improving application workflows to enhance stability and user experience.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="print-resume-section">
+            <h2>Projects</h2>
+            <div class="print-divider"></div>
+            
+            <div class="print-project">
+                <div class="print-project-header">
+                    <strong>AutoWealth – Autonomous AI Financial Governance System</strong>
+                </div>
+                <p>AI-driven platform that autonomously monitors startup financial health and enforces policy-based spending optimization using LLM reasoning. Designed a three-tier governance model (Stable, Watch, Critical) that dynamically adjusts AI authority based on financial runway. Implemented AI-driven financial analysis to detect inefficient SaaS spending and improve runway sustainability. Built using Python, Flask, Ollama LLM (LLaMA/Mistral), SQLite, rule-based policy engine, async task processing, and structured logging.</p>
+            </div>
+
+            <div class="print-project">
+                <div class="print-project-header">
+                    <strong>AI-Powered Personalized Study Assistant Platform</strong>
+                </div>
+                <p>AI-powered learning platform that generates personalized study plans using NLP-based syllabus parsing and transformer models to adapt study schedules based on topic complexity and user learning pace. Integrated Hugging Face transformers for topic understanding, summarization, and beginner-friendly doubt resolution. Developed REST APIs with Flask/FastAPI and SQLite for syllabus upload, plan generation, and study plan persistence.</p>
+            </div>
+
+            <div class="print-project">
+                <div class="print-project-header">
+                    <strong>Multimodal Disaster Identification from Social Media Posts</strong>
+                </div>
+                <p>Deep learning system that detects disaster-related events from social media by combining textual and contextual features through a multimodal attentive learning approach. Implemented a deep attentive multimodal learning model to identify disaster-related events. Combined textual and contextual features to improve disaster classification performance.</p>
+            </div>
+        </div>
+
+        <div class="print-resume-section">
+            <h2>Skills</h2>
+            <div class="print-divider"></div>
+            <p><strong>Programming Languages:</strong> Python, SQL (MySQL/PostgreSQL), Java, C++</p>
+            <p><strong>Backend & Systems:</strong> Flask, FastAPI, REST APIs, Model Serving, API Integration, Async Processing</p>
+            <p><strong>AI / Machine Learning:</strong> Machine Learning, NLP, Transformer Models, Multimodal Learning, LLM Integration, Feature Engineering</p>
+            <p><strong>Data Engineering & Analytics:</strong> Data Cleaning & Transformation, ETL Pipelines, Relational Database Design, SQL Optimization, Exploratory Data Analysis</p>
+            <p><strong>Tools & Platforms:</strong> AWS (EC2, S3), Docker, Git/GitHub, Postman, SQLite, Railway</p>
+            <p><strong>Professional Skills:</strong> Analytical Thinking, Team Collaboration, Clear Communication</p>
+        </div>
+
+        <div class="print-resume-section">
+            <h2>Education</h2>
+            <div class="print-divider"></div>
+            <div class="print-edu-header">
+                <strong>Visvesvaraya College of Engineering & Technology</strong>
+                <span>Sep 2023 – April 2026</span>
+            </div>
+            <div>Bachelor of Technology – Computer Science (AI/ML) | CGPA: 8.52 / 10.0</div>
+            <div>Relevant Coursework: Data Structures & Algorithms, Operating Systems, Computer Networks</div>
+        </div>
+
+        <div class="print-resume-section">
+            <h2>Leadership & Responsibilities</h2>
+            <div class="print-divider"></div>
+            <ul>
+                <li><strong>Finalist – Codeunnati Marathon:</strong> Finalist in codeunnati marathon for AutoWealth AI conducted by SAP and TASK out of 600 Teams.</li>
+                <li><strong>Team Lead - Academic Project Work:</strong> Led a four-member team coordinating tasks, reviewing code, and ensuring backend standards.</li>
+                <li><strong>Organizer-Technical Fest:</strong> Organized College-Level Event, Hackathon, Techno Quiz.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Core Interactions script -->
+    <script src="script.js"></script>
+</body>
+</html>
